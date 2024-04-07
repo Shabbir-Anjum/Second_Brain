@@ -4,21 +4,16 @@
   "version": "1.0",
   "description": "Description of your extension",
   "permissions": [
-    "activeTab"
+    "tabs",
+    "activeTab",
+    "https://mail.google.com/*",
+    "https://chat.google.com/*"
   ],
-  "action": {
-    "default_popup": "index.html"
-  },
   "background": {
     "service_worker": "background.js"
   },
-  "icons": {
-    "16": "/assets/logo.png",
-    "48": "/assets/logo.png",
-    "128": "/assets/logo.png"
-},
-  "browser_action": {
-    "default_popup": "popup.html",
+  "action": {
+    "default_popup": "index.html",
     "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png",
