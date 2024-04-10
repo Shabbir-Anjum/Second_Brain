@@ -32,6 +32,7 @@ function openGoogle() {
   });
 }
 
+
 // Call the function to open Google when the extension is installed
 chrome.runtime.onInstalled.addListener(function() {
   openGoogle();
